@@ -2,6 +2,19 @@ import { Dimensions } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 export const SIZES = {
+  // global font sizes
+  largeTitle: 40,
+  h1: 30,
+  h2: 22,
+  h3: 16,
+  h4: 14,
+  h5: 12,
+  body1: 30,
+  body2: 22,
+  body3: 16,
+  body4: 14,
+  body5: 12,
+
   // space size
   space2: 2,
   space4: 4,
@@ -99,15 +112,62 @@ export const COLORS = {
 };
 
 export const FONTFAMILY = {
-  poppins_black: "Poppins-Black",
-  poppins_bold: "Poppins-Bold",
-  poppins_extrabold: "Poppins-ExtraBold",
-  poppins_extralight: "Poppins-ExtraLight",
-  poppins_light: "Poppins-Light",
-  poppins_medium: "Poppins-Medium",
-  poppins_regular: "Poppins-Regular",
-  poppins_semibold: "Poppins-SemiBold",
-  poppins_thin: "Poppins-Thin",
+  // regular fonts
+  regular: "Poppins-Regular",
+  black: "Poppins-Black",
+  bold: "Poppins-Bold",
+  extraBold: "Poppins-ExtraBold",
+  extraLight: "Poppins-ExtraLight",
+  light: "Poppins-Light",
+  medium: "Poppins-Medium",
+  semibold: "Poppins-SemiBold",
+  thin: "Poppins-Thin",
+
+  // italic fonts
+  italic: "Poppins-Italic",
+  blackItalic: "Poppins-BlackItalic",
+  boldItalic: "Poppins-BoldItalic",
+  extraBoldItalic: "Poppins-ExtraBoldItalic",
+  extraLightItalic: "Poppins-ExtraLightItalic",
+  lightItalic: "Poppins-LightItalic",
+  mediumItalic: "Poppins-MediumItalic",
+  regularItalic: "Poppins-RegularItalic",
+  semiboldItalic: "Poppins-SemiBoldItalic",
+  thinItalic: "Poppins-ThinItalic",
+};
+
+export const FONTS = {
+  largeTitle: { fontFamily: FONTFAMILY.black, fontSize: SIZES.largeTitle },
+  h1: { fontFamily: FONTFAMILY.bold, fontSize: SIZES.h1, lineHeight: 36 },
+  h2: { fontFamily: FONTFAMILY.bold, fontSize: SIZES.h2, lineHeight: 30 },
+  h3: { fontFamily: FONTFAMILY.semibold, fontSize: SIZES.h3, lineHeight: 22 },
+  h4: { fontFamily: FONTFAMILY.semibold, fontSize: SIZES.h4, lineHeight: 22 },
+  h5: { fontFamily: FONTFAMILY.semibold, fontSize: SIZES.h5, lineHeight: 22 },
+  body1: {
+    fontFamily: FONTFAMILY.regular,
+    fontSize: SIZES.body1,
+    lineHeight: 36,
+  },
+  body2: {
+    fontFamily: FONTFAMILY.regular,
+    fontSize: SIZES.body2,
+    lineHeight: 30,
+  },
+  body3: {
+    fontFamily: FONTFAMILY.regular,
+    fontSize: SIZES.body3,
+    lineHeight: 22,
+  },
+  body4: {
+    fontFamily: FONTFAMILY.regular,
+    fontSize: SIZES.body4,
+    lineHeight: 22,
+  },
+  body5: {
+    fontFamily: FONTFAMILY.regular,
+    fontSize: SIZES.body5,
+    lineHeight: 22,
+  },
 };
 
 export const darkTheme = {
