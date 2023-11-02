@@ -7,7 +7,7 @@ import { styles } from "./styles/welcome-screen.styles";
 
 const WelcomeScreen = ({ navigation }) => {
   const onPressGetStarted = () => {
-    navigation.navigate("WalkThrough");
+    navigation.navigate("Walkthrough");
   };
 
   return (

@@ -92,6 +92,13 @@ export const COLORS = {
   dark20: "rgba(13, 15, 35, 0.2)",
   dark08: "rgba(13, 15, 35, 0.08)",
 
+  // Light
+  light: "rgba(255, 255, 255, 1)",
+  light80: "rgba(255, 255, 255, 0.8)",
+  light60: "rgba(255, 255, 255, 0.6)",
+  light20: "rgba(255, 255, 255, 0.2)",
+  light08: "rgba(255, 255, 255, 0.08)",
+
   // Grey
   grey: "rgba(160, 161, 180, 1)",
   grey80: "rgba(160, 161, 180, 0.8)",
