@@ -113,6 +113,26 @@ export const COLORS = {
   lightGrey20: "rgba(247, 247, 247, 0.2)",
   lightGrey08: "rgba(247, 247, 247, 0.08)",
 
+  // Support 1
+  support1: 'rgba(110, 162, 255, 1)',
+  support1_08: 'rgba(110, 162, 255, 0.08)',
+
+  // Support 2
+  support2: 'rgba(249, 161, 218, 1)',
+  support2_08: 'rgba(249, 161, 218, 0.08)',
+
+  // Support 3
+  support3: 'rgba(0, 210, 224, 1)',
+  support3_08: 'rgba(0, 210, 224, 0.08)',
+
+  // Support 4
+  support4: 'rgba(255, 132, 13, 1)',
+  support4_08: 'rgba(255, 132, 13, 0.08)',
+
+  // Support 5
+  support5: 'rgba(123, 96, 238, 1)',
+  support5_08: 'rgba(123, 96, 238, 0.08)',
+  
   // Shadow
   shadow: "rgba(138, 149, 158, 1)",
   shadow08: "rgba(138, 149, 158, 0.08)",

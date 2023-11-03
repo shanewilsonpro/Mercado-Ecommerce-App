@@ -6,7 +6,14 @@ import { constants } from "../constants";
 
 import { styles } from "./styles/walkthrough-footer.styles";
 
-const WalkthroughFooter = ({ scrollX }) => {
+const WalkthroughFooter = ({ scrollX, navigation }) => {
+  const onPressLogin = () => {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "AuthMain" }],
+    });
+  };
+
   const Dots = () => {
     const dotPosition = Animated.divide(scrollX, SIZES.width);
 
@@ -55,6 +62,7 @@ const WalkthroughFooter = ({ scrollX }) => {
           label="Log In"
           contentContainerStyle={styles.LogInButtonContainer}
           labelStyle={styles.LoginButtonLabel}
+          onPress={onPressLogin}
         />
       </View>
     </View>

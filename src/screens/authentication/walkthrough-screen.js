@@ -11,7 +11,7 @@ import WalkthroughImage4 from "../../components/walkthrough-image-4";
 
 import { styles } from "./styles/walkthrough-screen.styles";
 
-const WalkthroughScreen = () => {
+const WalkthroughScreen = ({ navigation }) => {
   // Walkthrough Image 2
   const [walkthroughImage2Animate, setWalkthroughImage2Animate] =
     useState(false);
@@ -82,7 +82,7 @@ const WalkthroughScreen = () => {
       />
 
       {/* Footer */}
-      <WalkthroughFooter scrollX={scrollX} />
+      <WalkthroughFooter scrollX={scrollX} navigation={navigation} />
     </View>
   );
 };

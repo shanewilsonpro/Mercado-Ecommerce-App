@@ -1,5 +1,6 @@
 import { TouchableOpacity, Text } from "react-native";
-import { COLORS, FONTS } from "../theme/theme";
+
+import { styles } from "./styles/text-button.styles";
 
 const TextButton = ({
   contentContainerStyle,
@@ -10,24 +11,16 @@ const TextButton = ({
 }) => {
   return (
     <TouchableOpacity
-      style={{
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: COLORS.primary,
-        ...contentContainerStyle,
-      }}
+      style={[
+        styles.TouchableContainer,
+        {
+          ...contentContainerStyle,
+        },
+      ]}
       disabled={disabled}
       onPress={onPress}
     >
-      <Text
-        style={{
-          color: COLORS.secondary,
-          ...FONTS.h3,
-          ...labelStyle,
-        }}
-      >
-        {label}
-      </Text>
+      <Text style={[styles.LabelText, { ...labelStyle }]}>{label}</Text>
     </TouchableOpacity>
   );
 };
