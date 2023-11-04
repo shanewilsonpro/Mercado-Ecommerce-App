@@ -13,7 +13,7 @@ import { images } from "../../constants";
 import { SIZES } from "../../theme/theme";
 import { styles } from "./styles/auth-main-screen.styles";
 
-const AuthMainScreen = () => {
+const AuthMainScreen = ({ navigation }) => {
   // States
   const [mode, setMode] = useState("signIn");
 
@@ -45,7 +45,7 @@ const AuthMainScreen = () => {
       {/* Auth Container */}
       <View style={{ zIndex: 1 }}>
         {mode == "signIn" ? (
-          <SignIn animationState={animationState} />
+          <SignIn animationState={animationState} navigation={navigation} />
         ) : (
           <SignUp
             animationState={animationState}

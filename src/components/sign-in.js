@@ -15,6 +15,7 @@ import { styles } from "./styles/sign-in.styles";
 
 const SignIn = ({
   animationState,
+  navigation
 }) => {
   // States
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +29,7 @@ const SignIn = ({
   };
 
   const onPressLogin = () => {
-    console.log("Login");
+    navigation.navigate("Home")
   };
 
   return (
